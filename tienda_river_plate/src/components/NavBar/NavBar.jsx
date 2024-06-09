@@ -14,22 +14,35 @@ import {
     Button
 } from '@chakra-ui/react'
 import { MdArrowDropDown } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
     return (
         <Flex h={'10vh'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={'#D40B0B'}>
-            <Heading>Logo</Heading>
+            <Heading>
+                <Link to='/' >Logo</Link>
+            </Heading>
             <Menu>
                 <MenuButton as={Button} rightIcon={<MdArrowDropDown />}>
                     Categorias
                 </MenuButton>
                 <MenuList>
-                    <MenuItem>Camisetas</MenuItem>
-                    <MenuItem>Remeras entrenamiento</MenuItem>
-                    <MenuItem>Buzos y camperas</MenuItem>
-                    <MenuItem>Pantalones</MenuItem>
-                    <MenuItem>Shorts</MenuItem>
+                    <MenuItem>
+                        <Link to='/categorias/Camisetas' >Camisetas</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/categorias/Remeras' >Remeras</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/categorias/Abrigos' >Abrigos</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/categorias/Pantalones' >Pantalones</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/categorias/Shorts' >Shorts</Link>
+                    </MenuItem>
                 </MenuList>
             </Menu>
             <CartWidget />
