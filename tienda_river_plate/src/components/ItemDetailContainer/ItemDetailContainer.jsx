@@ -10,9 +10,19 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true)
     const { productId } = useParams()
 
+    const navigate = useNavigate()
+
     useEffect(() => {
         getProductById(productId)
-            .then((data) => setProducto(data))
+            .then((data) => {
+                if (!data) {
+                navigate('/*')          
+                } else {
+                    setProducto(data)
+                }
+            })
+
+
             .catch((error) => console.log(error))
             .finally(() => setLoading(false))
     }, [])

@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<ItemListContainer title={'Tienda River Plate'} />} />
           <Route path='/categorias/:categoryId' element={<ItemListContainer title={'Tienda River Plate'} />} />
           <Route path='/producto/:productId' element={<ItemDetailContainer />} />
+          <Route path='*' element={<PageNotFound />} /> 
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
