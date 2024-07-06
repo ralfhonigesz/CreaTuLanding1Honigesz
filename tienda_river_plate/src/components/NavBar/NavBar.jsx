@@ -20,8 +20,8 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <Flex h={'10vh'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={'#D40B0B'}>
-            <Heading>
-                <Link to='/' >Logo</Link>
+            <Heading h={'5.5rem'} w={'5.5rem'} ml={5}>
+                <Link to='/' ><img src="https://purodiseno.lat/wp-content/uploads/2022/02/RIVER-2-1024x1024.png"/></Link>
             </Heading>
             <Menu>
                 <MenuButton as={Button} rightIcon={<MdArrowDropDown />}>

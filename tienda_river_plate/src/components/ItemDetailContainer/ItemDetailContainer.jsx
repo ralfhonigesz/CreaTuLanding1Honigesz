@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
         getProductById(productId)
             .then((data) => {
                 if (!data) {
-                navigate('/*')          
+                    navigate('/*')
                 } else {
                     setProducto(data)
                 }
@@ -36,7 +36,9 @@ const ItemDetailContainer = () => {
                         < GridLoader color="#D40B0B" />
                     </Flex >
                     :
+                    <Flex justify={'center'} align={'center'}>
                     <ItemDetail {...producto} />
+                    </Flex>
             }
 
         </>

@@ -25,7 +25,13 @@ const ItemListContainer = ({ title }) => {
 
   return (
     <Flex direction={'column'} justify={'center'} align={'center'}>
-      <Heading color={'black'} mt={10}>{title}</Heading>
+      <Heading
+        color={'black'}
+        mt={10}
+        textDecorationLine={'underline'}
+        textDecorationStyle={'solid'}
+        textDecorationColor={'#D40B0B'}
+      >{title}</Heading>
 
       {
         loading ?
