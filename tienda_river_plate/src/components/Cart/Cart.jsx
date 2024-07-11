@@ -78,7 +78,7 @@ const Cart = () => {
                                     backgroundColor={'#D40B0B'}
                                     color={'#fff'}
                                     _hover={{ backgroundColor: '#EA5E5E', color: '#fff' }}>
-                                    <Link to=''>Finalizar compra</Link>
+                                    <Link to='/checkout'>Finalizar compra</Link>
                                 </Button>
                             </Th>
                         </Tr>
