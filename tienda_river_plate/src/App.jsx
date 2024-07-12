@@ -19,7 +19,7 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path='/' element={<ItemListContainer title={'Tienda River Plate'} />} />
+            <Route path='/' element={<ItemListContainer title={'¡Qué orgullo ser hincha de River Plate!'} />} />
             <Route path='/categorias/:categoryId' element={<ItemListContainer title={'Tienda River Plate'} />} />
             <Route path='/producto/:productId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />

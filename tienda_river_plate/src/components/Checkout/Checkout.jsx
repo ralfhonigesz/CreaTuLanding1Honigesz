@@ -103,13 +103,20 @@ const Checkout = () => {
     console.log(error)
     return (
         <Center mt={10}>
-            <Flex direction={'column'} align={'center'} justify={'center'}>
+            <Flex direction={'column'}
+                align={'center'}
+                justify={'center'}
+                backgroundColor={'#BDBDBD'}
+                border={'20px solid #BDBDBD'}
+                borderRadius={'30px'}
+                padding={'20px'}>
 
                 <Heading>Datos de facturación</Heading>
                 <Flex w={'100%'} justify={'center'} align={'center'}>
                     <FormControl>
                         <FormLabel>Nombre</FormLabel>
                         <Input
+                            backgroundColor={'white'}
                             type='text'
                             name='name'
                             placeholder='Marcelo Gallardo'
@@ -121,6 +128,7 @@ const Checkout = () => {
                         <FormErrorMessage>{error.name}</FormErrorMessage>
                         <FormLabel>Email</FormLabel>
                         <Input
+                            backgroundColor={'white'}
                             type='email'
                             name='email'
                             placeholder='riverplate@riverplate.com'
@@ -131,6 +139,7 @@ const Checkout = () => {
                         </Flex>
                         <FormLabel>Repetir email</FormLabel>
                         <Input
+                            backgroundColor={'white'}
                             type='email'
                             name='repeatedEmail'
                             placeholder='riverplate@riverplate.com'
@@ -141,6 +150,7 @@ const Checkout = () => {
                         </Flex>
                         <FormLabel>Teléfono</FormLabel>
                         <Input
+                            backgroundColor={'white'}
                             type='text'
                             name='phone'
                             placeholder='01122334455'
